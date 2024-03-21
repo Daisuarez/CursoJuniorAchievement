@@ -1,0 +1,363 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #033366;
+    color: #fff;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    /* Ajusta el radio de los bordes según sea necesario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+header img {
+    width: 100%;
+    height: 350px;
+    filter: brightness(0.5);
+    border-radius: 5px;
+}
+
+h1 {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 40px;
+    animation: wave 2s infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    color: #FFA500;
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    /* Ajusta el espacio vertical alrededor del texto */
+    background-color: #110c0c;
+    /* Color de fondo */
+    margin-top: -55px;
+    /* Margen superior */
+    margin-bottom: -10px;
+    /* Margen inferior */
+
+}
+
+.logo-small {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: auto;
+    filter: brightness(1.5);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -300px;
+    /* Ajusta la posición vertical del menú */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    /* Cambia el display a flex para colocar los elementos en línea */
+    justify-content: flex-end;
+
+}
+
+nav li {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.45s;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+.upcoming-events {
+    background: #033366;
+    /* Fondo blanco */
+    padding: 60px 20px;
+    /* Relleno */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+}
+
+.upcoming-events img {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: -20px auto 20px auto;
+    border-radius: 5px;
+    float: right;
+    /* Hace que la imagen flote hacia la derecha */
+    margin-left: 20px;
+}
+
+
+.upcoming-events h3 {
+    color: #ff6600;
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: left;
+
+}
+
+.upcoming-events p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: left;
+    text-indent: 20px;
+    /* Sangría del texto */
+}
+
+.about-mdlhl {
+    margin: 70px auto;
+    background: #faf3e0;
+    padding: 20px;
+    /* Relleno */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    width: calc(100% - 140px);
+    /* Ancho total menos el margen izquierdo */
+}
+
+.about-mdlhl img {
+    width: 30%;
+    /* Ajusta el ancho de la imagen */
+    height: auto;
+    margin-top: -50px;
+    display: block;
+    margin-left: 450px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-mdlhl h3 {
+    color: #ff6600;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.about-mdlhl p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact {
+    margin: 70px auto;
+    background: #faf3e0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(100% - 140px);
+    display: flex;
+    flex-wrap: wrap; /* Asegura que los elementos hijos se envuelvan */
+}
+
+.contact img {
+    max-width: 100%; /* Establece el ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Hace que la imagen sea un bloque para centrarla */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+
+
+.contact p {
+    flex: 100%; /* Asegura que el párrafo ocupe todo el ancho del contenedor */
+    color: #0a0808; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto */
+    margin-top: 20px; /* Margen superior para separar el párrafo de las imágenes */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+
+.rules {
+    margin: 70px auto;
+    background: #faf3e0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(100% - 140px);
+    display: flex; /* Utilizamos flexbox */
+    flex-direction: column; /* Aseguramos que los elementos se apilen verticalmente */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+}
+
+.rules h3 {
+    color: #ff6600;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.rules h4 {
+    color: #ff4b15;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.rules p {
+    color: #0a0808; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto */
+    margin-top: 20px; /* Margen superior para separar el párrafo de las imágenes */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+.rules ol,
+.rules ul {
+    color: #0a0808;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: left;
+    list-style-position: inside;
+}
+
+.rules ol li {
+    margin-bottom: 10px;
+}
+
+.rules ol li strong {
+    font-weight: bold; /* Establece el texto de los elementos 1, 2 y 3 en negrita */
+}
+
+.rules ol li ol {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.rules ol li ol li {
+    margin-bottom: 5px;
+}
+
+.rules ol li ol li strong {
+    font-weight: normal; /* Restaura el texto dentro del elemento 3 a la normalidad */
+}
+
+.info {
+    margin: 70px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(100% - 140px);
+}
+
+.info h3 {
+    color: #ff6600;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #000;
+}
+
+.info table caption {
+    text-align: left;
+    font-size: 14px;
+}
+
+.info table th,
+.info table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+    
+}
+
+.info table th {
+    font-weight: bold;
+    background-color: #0e11c9;
+    color: #fff;
+}
+
+.info table .td-color {
+    background-color: #1e1866;
+    color: #fff;
+    font-weight: bold;
+}
+
+.info table tbody tr:nth-child(even) {
+    background-color: #0ef7ff;
+}
+
+.info table tbody tr:hover {
+    background-color: #ff5a5a;
+}
+
+.contain-info_txt h4 {
+    color: #ff6600;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.contain-info_txt p {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contain-info_txt p span {
+    font-weight: bold;
+}
+
+.contain-info_txt p span:last-child {
+    font-weight: normal;
+    color: black;
+}
+  
+footer {
+    background: #0a0808;
+    /* Añadí un fondo blanco al pie de página */
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #ff6600;
+    /* Añadí un borde superior naranja al pie de página */
+    margin-top: 0px;
+}
